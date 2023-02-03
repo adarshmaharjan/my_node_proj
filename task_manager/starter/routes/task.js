@@ -1,5 +1,7 @@
 const express = require("express")
+
 const router = express.Router()
+
 const {
   getAllTasks,
   createTask,
@@ -15,4 +17,5 @@ router
   .patch(updateTask)
   .delete(deleteTask)
   .put(editTask)
+
 module.exports = router
